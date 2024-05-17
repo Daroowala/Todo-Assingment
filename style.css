@@ -17,10 +17,10 @@ h1{
 
 .todo-item {
     padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0px 0px 4px 0px #e6e6e6;
+    background-color: rgb(156, 245, 156);
+    box-shadow: 0px 0px 14px 0px darkgreen;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .hide{
