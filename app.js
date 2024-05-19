@@ -18,7 +18,7 @@ function addTodo () {
     var editButton = document.createElement('button');
     var deleteBtn = document.createElement('button');
 
-    editButton.innerHTML = "Edit";
+    editButton.innerText = "Edit";
     editButton.setAttribute("onclick", "editTodo(this)");
     newTodo.append(editButton);
 
