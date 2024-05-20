@@ -64,3 +64,15 @@
 
 
 
+var list = document.getElementById(list);
+
+function addTodo() {
+    var inputTodo = document.getElementById("todo-item");
+    var li = document.createElement("li")
+    var liText = document.createTextNode("Rehan")
+    li.appendChild(liText)
+
+
+    console.log(li)
+    
+}
