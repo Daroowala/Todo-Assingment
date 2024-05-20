@@ -1,4 +1,4 @@
-h1{
+/* h1{
     text-align: center;
 }
 
@@ -28,4 +28,10 @@ h1{
 }
 .show{
     display: block;
+} */
+
+
+
+body{
+    text-align: center;
 }
