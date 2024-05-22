@@ -77,6 +77,8 @@ function addTodo() {
     // create delet button
     var delBtn = document.createElement("button")
     var delText = document.createTextNode("DELETE")
+    delBtn.setAttribute("class","btn")
+    delBtn.setAttribute("onclick","deleteitem(this)")
     delBtn.appendChild(delText)
     
     li.appendChild(delBtn)
@@ -88,4 +90,7 @@ function addTodo() {
 
     console.log(li)
     
+}
+function deleteitem(a){
+    a.parentNode.remove()
 }
