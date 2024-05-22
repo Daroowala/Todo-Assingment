@@ -94,3 +94,6 @@ function addTodo() {
 function deleteitem(a){
     a.parentNode.remove()
 }
+function deletAll(){
+    list.innerHTML = ""
+}
