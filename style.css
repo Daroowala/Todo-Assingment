@@ -35,3 +35,9 @@
 body{
     text-align: center;
 }
+.btn{
+    background-color: rgb(240, 18, 30);
+}
+.editBtn{
+    background-color: rgb(62, 240, 18);
+}

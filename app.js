@@ -74,15 +74,22 @@ function addTodo() {
     var liText = document.createTextNode(inputTodo.value)
     li.appendChild(liText)
 
-    // create delet button
+    // create delete button
     var delBtn = document.createElement("button")
     var delText = document.createTextNode("DELETE")
     delBtn.setAttribute("class","btn")
     delBtn.setAttribute("onclick","deleteitem(this)")
     delBtn.appendChild(delText)
+
+    // create edit button
+    var editBtn = document.createElement("button")
+    var editText = document.createTextNode("EDIT")
+    editBtn.appendChild(editText)
+    editBtn.setAttribute("class","editBtn")
+    editBtn.setAttribute("onclick","editItem(this)")
     
     li.appendChild(delBtn)
-
+    li.appendChild(editBtn)
     
     list.appendChild(li)
     inputTodo.value = ""
@@ -94,6 +101,11 @@ function addTodo() {
 function deleteitem(a){
     a.parentNode.remove()
 }
+function editItem(a){
+    console.log(a.parentNode.firstChild.nodeValue)
+    var val = prompt("Please Enter update value",a.parentNode.firstChild.nodeValue)
+    a.parentNode.firstChild.nodeValue = val
+    }
 function deletAll(){
     list.innerHTML = ""
 }
